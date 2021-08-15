@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="title">Classes</h2>
+    <!-- <script>
+        class Rectangle {
+            constructor(_width,_height,_color){
+                console.log("fakjfa'kfa'fl")
+
+                this._width = _width;
+                this._height = _height;
+                this._color = _color;
+            }
+            getArea(){
+                return this._width * this._height 
+            }
+            printDescription(){
+                console.log(`i am a rectangle of $(this._width')x$(this._height)and i am $(this._color)`);
+            }
+        }
+        let myRectangle1 = new Rectangle(5,3,'blue');
+        let myRectangle2 = new Rectangle(10,5,'red');
+        console.log("dien tich hcn 1 :", myRectangle1.getArea());
+        console.log("dien tich hcn 2 :", myRectangle2.getArea());
+
+
+    </script> -->
+    <!-- <script>
+        class Square {
+            constructor(_width){
+                this.width = _width;
+                this.height = _width;
+                this.numOfRequestforArea = 0;
+
+            }
+            get Area(){
+                this.numOfRequestforArea++;
+                return this.width * this.height
+            }
+            set Area(area){
+                this.width = Math.sqrt(area);
+                this.height = this.width
+            }
+        } 
+        let Square1 = new Square(4);
+        console.log(Square1.area)
+        Square1.area = 25
+        console.log(Square1.width)
+        console.log(Square1.height)
+
+    </script> -->
+    <!-- <script>
+        class Square {
+            constructor(_width){
+                this.width = _width;
+                this.height = _width;
+            }
+            static equals(a,b) {
+                return a.width*a.height === b.width*b.height
+            }
+            static isValidDimensions(width,height) {
+                return width === height
+            }
+        }
+        let square1 = new Square(8)
+        let square2 = new Square(9)
+        console.log(Square.equals(square1,square2));
+        console.log(Square.isValidDimensions(7,6))
+    </script> -->
+    <script>
+        class Person {
+            constructor(_name,_age){
+                this.name = _name;
+                this.age = _age;
+            }
+          
+            describe(){
+                console.log
+
+            }
+        }
+        class Programmer extends Person {
+            constructor(_name,_age,_yearOfExperience){
+                super(_name,_age)
+                this.yearOfExperience = _yearOfExperience
+            }
+            code(){
+                console.log(`${this.name} is coding`)
+            }
+        }
+        let person1 = new Person('Jeff',45)
+        let programmer1 = new Programmer('Bon',56,40)
+        programmer1.code();
+
+        const programmers= [
+            new Programmer ("Dom",56,12),
+            new Programmer ("fa",3423,12),
+            new Programmer ("fsf",56,12),
+            new Programmer ("Dom",56,12),
+            new Programmer ("Dom",56,12),
+            new Programmer ("Dom",56,12)
+         ]
+    </script>
+</body>
+</html>
